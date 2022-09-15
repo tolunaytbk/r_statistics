@@ -1,5 +1,3 @@
-setwd("C:/Users/tolun/Desktop/Staj/Days/09_09_cuma/r_code/")
-getwd()
 
 # Libraries
 library(readr)
@@ -14,7 +12,7 @@ library(erer)
 
 
 # Get Data
-data <- read.csv("GelirSira.csv")
+data <- read.csv("data/GelirSira.csv")
 data <- data[-1]
 
 # Creating Model
@@ -80,7 +78,7 @@ new_data <- data.frame(
   Tarih     = rep(mean(data$Tarih, 2)),
   Cinsiyet  = c(1),
   OkulTipi  = c(1)
-)  #Edebiyat, Matematik, and FenBÝl variables are at their means.
+)  #Edebiyat, Matematik, and FenBÃl variables are at their means.
    #Value of Cinsiyet and OkulTipi variables is 1.
 
 new_data[, c("pred.prob")] <- predict(ord_logit, 
