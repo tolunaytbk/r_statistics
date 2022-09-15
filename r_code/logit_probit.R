@@ -1,5 +1,3 @@
-setwd("C:/Users/tolun/Desktop/Staj/Days/06_09_sali/r_code/")
-getwd()
 
 # Packages
 library(readxl)
@@ -11,8 +9,8 @@ library(margins)
 
 
 # Get Data
-multinomial_data <- read_xlsx("brand_choice.xlsx")
-binomial_data <- read_xlsx("organic_diet.xlsx")
+multinomial_data <- read_xlsx("data/brand_choice.xlsx")
+binomial_data <- read_xlsx("data/organic_diet.xlsx")
 
 # Binomial Logit/Probit with library(foreign)
 ## Logit
