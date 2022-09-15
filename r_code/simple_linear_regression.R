@@ -1,12 +1,10 @@
-setwd("C:/Users/tolun/Desktop/Staj/Days/02.09 Cuma/R")
-getwd()
 
 #install.packages("tidyverse")
 library(tidyverse)
 library(readr)
 library(readxl)
 
-mroz <- read_xlsx("mroz.xlsx")
+mroz <- read_xlsx("data/mroz.xlsx")
 
 data()
 head(mroz, 10)
