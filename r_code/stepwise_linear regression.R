@@ -1,12 +1,10 @@
-setwd("C:/Users/tolun/Desktop/Staj/Days/02.09 Cuma/R")
-getwd()
 
 # Libraries
 library(olsrr)
 library(readxl)
 
 # Data 
-mroz <- read_xlsx("mroz.xlsx")
+mroz <- read_xlsx("data/mroz.xlsx")
 
 # Model
 model <- lm(KadinCalismaSuresi ~ cocsay6yaskucuk + cocsay618yas + 
