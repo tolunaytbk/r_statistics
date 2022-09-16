@@ -1,4 +1,3 @@
-setwd("C:/Users/tolun/Desktop/Staj/Days/13_09_sali/")
 
 # Libraries
 library(pscl)
@@ -6,7 +5,7 @@ library(AER)
 library(MASS)
 
 # Get Data
-data <- read.csv("odul.csv")
+data <- read.csv("data/odul.csv")
 data <- data[-1]
 
 # Model Decision 
